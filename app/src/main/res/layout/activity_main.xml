@@ -8,12 +8,27 @@
 
     <Button
         android:id="@+id/btnDrawableShape"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:text="Drawable Shape"
         android:textStyle="bold"
+        android:textSize="20dp"
         android:textColor="#784106"
         android:background="@drawable/drawable_button_shape"/>
+    <ImageView
+        android:src="@drawable/drawable_button_clip"
+        android:id="@+id/imgDrawableClip"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/btnDrawableShape"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imgDrawableClip"
+        android:text="Clip"
+        android:id="@+id/btnClip"
+        android:textStyle="bold"
+        android:textColor="#3b7313"/>
 
 </RelativeLayout>
